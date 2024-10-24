@@ -1,17 +1,19 @@
 export default function Navbar() {
   return (
-    <nav className="flex justify-between items-center bg-transparent">
+    <nav className="flex justify-between items-center bg-transparent p-5">
       <img
         src="https://unavatar.io/sokmark"
         alt="tu"
-        className="w-16 rounded-full ms-4"
+        className="w-40 rounded-full ms-16"
       />
 
-      <section className="flex">
-        <p className="me-4">Barriles</p>
-        <p className="me-4">Accesorios</p>
-        <p className="me-4">Recetas</p>
-      </section>
+      <nav className="flex">
+        <ul className="flex">
+          <li className="me-16">Barriles</li>
+          <li className="me-16">Accesorios</li>
+          <li className="me-16">Recetas</li>
+        </ul>
+      </nav>
     </nav>
   );
 }
