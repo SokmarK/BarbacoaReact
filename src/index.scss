@@ -1,8 +1,25 @@
 :root {
   --color-red: #CC3B34;
   --color-red-dark: #2C0805;
+  --color-gray-light: #d5d1cc;
+  --color-yellow-light: #f5e1b5
 }
 
+@font-face {
+  font-family: shrimp;
+  src: url(./assets/fonts/SHRIMP.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body {
-  background-color: var(--color-red);
+  background-color: var(--color-gray-light);
+  font-family: 'shrimp', sans-serif;
+}
+
+body, html{
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
 }

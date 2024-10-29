@@ -3,13 +3,13 @@ import "./Navbar.scss";
 export default function Navbar() {
   return (
     <nav className="navbar">
-      <img src="https://unavatar.io/sokmark" alt="tu" />
+      <img src="barbacoabarrilLOGO.png" alt="barbacoabarril" />
       
-      <nav className="navbar__nav navbar__nav--closed-mobile">
-        <ul>
+      <nav className="navbar__nav ">
+        <ul className="navbar__menu">
           <li>Barriles</li>
           <li>Accesorios</li>
-          <li>Recetas</li>
+          <li className="navbar__mr">Recetas</li>
         </ul>
       </nav>
     </nav>
