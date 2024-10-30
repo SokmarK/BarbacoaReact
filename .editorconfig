@@ -1,0 +1,33 @@
+# EditorConfig es un archivo de configuración para editores y IDEs.
+# Más información en https://editorconfig.org/
+
+# Indica que este es el archivo raíz de configuración
+root = true
+
+# Configuración por defecto para todos los archivos
+[*]
+indent_style = space        # Usar espacios en lugar de tabs
+indent_size = 4             # Tamaño de indentación de 2 espacios
+end_of_line = lf            # Usar saltos de línea de tipo LF (Linux/Unix)
+charset = utf-8             # Codificación de caracteres UTF-8
+trim_trailing_whitespace = true  # Eliminar espacios en blanco al final de cada línea
+insert_final_newline = true      # Agregar una línea en blanco al final de cada archivo
+
+# Configuraciones específicas para archivos de JavaScript y JSX (React)
+[*.{js,jsx}]
+indent_style = space
+indent_size = 4
+
+# Configuración específica para archivos JSON
+[*.json]
+indent_style = space
+indent_size = 4
+
+# Configuración para archivos de CSS, SCSS y otros archivos de estilo
+[*.{css,scss}]
+indent_style = space
+indent_size = 4
+
+# Configuración específica para archivos Markdown
+[*.md]
+trim_trailing_whitespace = false  # No eliminar espacios al final de las líneas (útil para Markdown)

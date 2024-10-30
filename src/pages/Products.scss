@@ -1,0 +1,14 @@
+.sect {
+    background-color: var(--color-yellow-light);
+    display: flex;
+}
+
+.sect__ul {
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+}
