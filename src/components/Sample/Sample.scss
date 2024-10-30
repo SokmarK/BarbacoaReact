@@ -1,0 +1,19 @@
+.sample {
+    background-color: red;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+
+    &__child {
+        grid-column: 1 / 7;
+        grid-row-start: 1;
+        background-color: blue;
+    }
+
+    &__box {
+        grid-column: 6 / 13;
+        grid-row-start: 1;
+        background-color: green;
+    }
+}

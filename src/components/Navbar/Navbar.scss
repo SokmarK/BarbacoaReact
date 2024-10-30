@@ -1,29 +1,31 @@
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
+    background-color: black;
 
-
-  &__menu {
-    display: flex;
-    list-style: none;
-    padding: 0%;
-
-    li{
-      margin-left: 20px;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      color: var(--color-yellow-light);
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
-  }
 
+    &__menu {
+        display: flex;
+        list-style: none;
+        padding: 0%;
 
-  &__mr{
-    margin-right: 20px;
-  }
+        li {
+            margin-left: 20px;
+            font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
+                sans-serif;
+            color: var(--color-yellow-light);
+        }
+    }
+
+    &__mr {
+        margin-right: 20px;
+    }
 }
 
-.navbar img{
-  width: 97px;
-  margin-left: 20px;
+.navbar img {
+    width: 97px;
+    margin-left: 20px;
 }
