@@ -1,11 +1,17 @@
 .section-first{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     justify-content: space-around;
-    margin-top: 50px;
 
-    img{
-        width: 300px;
-        height: 321px;
+    max-width: 1300px;
+    margin: 50px auto;
+
+    img {
+        max-width: 100%;
+        // width: 300px;
+        // height: 200px;
+        // object-fit: cover;
         border-radius: 56px;
     }
 
@@ -25,9 +31,9 @@
         font-family: 'shrimp';
         color: var(--color-red);
         text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.7);
-        font-size: 1.3rem;
+        font-size: rem;
     }
-
+    
     &__p-price{
         font-weight: bold;
         font-size: 1.4rem;
