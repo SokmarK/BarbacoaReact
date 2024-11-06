@@ -1,0 +1,25 @@
+.section-clients {
+    &__header {
+        p {
+            margin: 0;
+            color: var(--color-red-dark);
+        }
+
+        h1 {
+            margin-top: 0;
+            color: var(--color-red-dark);
+        }
+    }
+
+    &__div-cards {
+        display: flex;
+        justify-content: space-between;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+    }
+
+    &__card{
+        background-color: #d9d9d9;
+        width: 500px;
+    }
+}

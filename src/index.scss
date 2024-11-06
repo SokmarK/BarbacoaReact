@@ -1,25 +1,36 @@
 :root {
-  --color-red: #CC3B34;
-  --color-red-dark: #2C0805;
-  --color-gray-light: #d5d1cc;
-  --color-yellow-light: #f5e1b5;
+    --color-red: #cc3b34;
+    --color-red-dark: #2c0805;
+    --color-gray-light: #d5d1cc;
+    --color-yellow-light: #f5e1b5;
 }
 
 @font-face {
-  font-family: shrimp;
-  src: url(./assets/fonts/SHRIMP.ttf) format('truetype');
-  font-weight: normal;
-  font-style: normal;
+    font-family: shrimp;
+    src: url(./assets/fonts/SHRIMP.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
-
 
 body {
-  background-color: var(--color-gray-light);
-  font-family: 'shrimp', sans-serif;
+    background-color: var(--color-gray-light);
+    font-family: "shrimp", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-body, html{
-  overflow-x: hidden;
-  padding: 0;
-  margin: 0;
+body,
+html {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.container-mini {
+    margin: 0px 70px 0px;
 }

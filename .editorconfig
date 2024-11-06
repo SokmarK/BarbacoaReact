@@ -8,7 +8,7 @@ root = true
 [*]
 indent_style = space        # Usar espacios en lugar de tabs
 indent_size = 4             # Tamaño de indentación de 2 espacios
-end_of_line = lf            # Usar saltos de línea de tipo LF (Linux/Unix)
+end_of_line = false            # Usar saltos de línea de tipo LF (Linux/Unix)
 charset = utf-8             # Codificación de caracteres UTF-8
 trim_trailing_whitespace = true  # Eliminar espacios en blanco al final de cada línea
 insert_final_newline = true      # Agregar una línea en blanco al final de cada archivo
