@@ -1,5 +1,8 @@
 .footer {
     background-color: var(--color-red-dark);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
 
     &__sect {
         margin-left: 20px;
@@ -8,15 +11,34 @@
     &__p,
     &__p1 {
         color: beige;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-        font-weight: 300;
+        margin: 0;
+        font-weight: 500;
     }
 
     &__p {
-        padding: 35px 20px 0px 35px;
+        padding: 20px 20px 0px 35px;
+        margin-bottom: 5px;
     }
 
     &__p1 {
         padding: 0px 20px 0px 35px;
     }
+
+    &__social {
+        padding: 20px 20px 0px 0px;
+        margin-right: 20px;
+    }
+
+    &__tiktok {
+        margin-right: 40px;
+    }
+
+img{
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(0.9);
+}
 }

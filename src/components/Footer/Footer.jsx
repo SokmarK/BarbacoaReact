@@ -8,9 +8,9 @@ export default function Footer() {
                 <p className="footer__p1">Villavicencio, Meta</p>
             </section>
 
-            <section>
-                <img src="" alt="" />
-                <img src="" alt="" />
+            <section className="footer__social">
+                <a href="https://www.tiktok.com/@barbacoabarrilescol" target="_blank"><img src="./tiktok.svg" alt="" className="footer__tiktok"/></a>
+                <a href="https://www.instagram.com/barbacoabarrilesco/" target="_blank"><img src="./instagram.svg" alt="" /></a>
             </section>
         </footer>
     );

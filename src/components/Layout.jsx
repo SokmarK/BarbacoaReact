@@ -2,8 +2,8 @@ import Navbar from "./Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer/Footer";
 import Products from "../pages/Products";
-import First from "./First/First";
 import Ourclients from "./Ourclients/Ourclients";
+import GridProducts from "./GridProducts/GridProducts";
 
 export default function Layout() {
     return (
@@ -11,7 +11,7 @@ export default function Layout() {
             <Navbar />
             <Outlet />
             <Products />
-            <First />
+            <GridProducts />
             <Ourclients />
             <Footer />
         </>

@@ -1,8 +1,8 @@
-import "./first.scss";
+import "./GridProducts.scss";
 
-export default function First() {
+export default function GridProducts() {
     return (
-        <section className="section-first">
+        <section className="section-first container">
             <div className="section-first__container">
                 <div className="section-first__div">
                     <img src="/barbacoaexample.png" alt="" />
@@ -17,7 +17,8 @@ export default function First() {
 
                 <div className="section-first__div">
                     <div className="section-first__red-div">
-                        <p>MÁS POPULAR</p>
+                        <img src="/stars.svg" alt="" />
+                        <p className="section-first__popular-p">MÁS POPULAR</p>
                     </div>
 
                     <img src="/barbacoaexample.png" alt="" />

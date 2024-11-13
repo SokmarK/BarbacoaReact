@@ -1,6 +1,5 @@
 .section-first {
-    max-width: 1300px;
-    margin: 160px 70px 70px;
+    margin-top: 150px;
 
     &__container {
         display: grid;
@@ -11,9 +10,6 @@
 
     img {
         max-width: 100%;
-        // width: 300px;
-        // height: 200px;
-        // object-fit: cover;
         border-radius: 56px;
     }
 
@@ -26,7 +22,7 @@
         background-color: #f5f3f4;
         border-radius: 56px;
         text-align: center;
-        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+        position: relative;
     }
 
     &__p-shrimp {
@@ -42,32 +38,49 @@
     }
 
     &__red-div {
+        position: absolute;
         text-align: center;
         background-color: var(--color-red);
-        padding: 8px;
-        border-top-right-radius: 30px;
-        border-top-left-radius: 30px;
-        position: absolute;
-        top: 850px;
-        left: 455px;
-        width: 340px;
+        border-top-right-radius: 56px;
+        border-top-left-radius: 56px;
+        width: 100%;
         color: wheat;
+        z-index: -1;
+        top: -80px;
+
+        img {
+        margin-top: 9px;
+        }
+
+        p{
+            position: relative;
+            font-family: "shrimp";
+            font-size: 25px;
+            top: -20px;
+        }
+    }
+
+    &__popular-p {
+        margin-bottom: 60px;
     }
 
     &__div-button {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 30px;
+        margin-top: 55px;
     }
 
     &__button {
         border-radius: 80px;
-        font-weight: 800;
-        padding: 10px;
+        font-family: "shrimp";
+        font-size: 15px;
+        padding: 20px;
         width: 260px;
+        border: none;
         background-color: var(--color-yellow-light);
-        border: 1px solid black;
         box-shadow: 1px 4px 1px #2c0805; //horizontal, vertical, dispersion #color//
+        color: var(--color-red-dark);
+        margin-bottom: 50px;
     }
 }

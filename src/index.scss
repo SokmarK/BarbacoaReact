@@ -3,6 +3,7 @@
     --color-red-dark: #2c0805;
     --color-gray-light: #d5d1cc;
     --color-yellow-light: #f5e1b5;
+    --color-yellow-dark: #d5c39e;
 }
 
 @font-face {
@@ -12,9 +13,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: hanken;
+    src: url(./assets/fonts/HANKEN.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     background-color: var(--color-gray-light);
-    font-family: "shrimp", sans-serif;
+    font-family: "hanken", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -27,10 +35,16 @@ html {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1124px;
     margin: 0 auto;
 }
 
-.container-mini {
-    margin: 0px 70px 0px;
+button{
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: var(--color-yellow-dark);
+    transform: scale(0.9);
 }
