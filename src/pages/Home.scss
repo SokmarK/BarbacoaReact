@@ -1,7 +1,6 @@
 .section {
-    max-width: 1220px;
-    margin: 0 auto;
-    padding: 30px;
+    padding-top: 130px;
+    padding-bottom: 130px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,7 +16,6 @@
     }
 
     .section__div {
-        margin-left: 40px;
         z-index: 99;
     }
 
