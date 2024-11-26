@@ -25,6 +25,14 @@ export default function Home() {
                     </div>
                 </div>
             </div>
+
+            <div className="video-container">
+                <video autoPlay loop muted>
+                    <source src="smoke.mp4" type="video/mp4"></source>
+                    Tu navegador no soporta el elemento de video.
+                </video>
+                <div className="gradient-overlay"></div>
+            </div>
         </section>
     );
 }

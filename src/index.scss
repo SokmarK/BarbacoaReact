@@ -20,6 +20,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: hanken;
+    src: url(./assets/fonts/BOLDHANKEN.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
     background-color: var(--color-gray-light);
     font-family: "hanken", sans-serif;
@@ -48,4 +56,12 @@ button{
 button:hover {
     background-color: var(--color-yellow-dark);
     transform: scale(0.9);
+}
+
+@media (max-width : 414px) and (max-width : 640px){
+
+.container{
+    max-width: 380px;
+}
+
 }

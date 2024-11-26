@@ -9,7 +9,7 @@ export default function Ourclients() {
             </div>
 
             <div className="section-clients__div-cards container">
-                <div className="section-clients__card ">
+                <div className="section-clients__card">
                     <img src="./marks.svg" alt="" />
                     <p>
                         Compré el ahumador de 80LB y no podría estar más
@@ -37,3 +37,5 @@ export default function Ourclients() {
         </section>
     );
 }
+
+

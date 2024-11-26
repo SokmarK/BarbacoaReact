@@ -29,7 +29,8 @@
         font-family: "shrimp";
         color: var(--color-red);
         text-shadow: 2px 1px 0px rgba(0, 0, 0, 0.7);
-        font-size: 1.3rem;
+        font-size: 1.5rem;
+        margin: 0;
     }
 
     &__p-price {
@@ -49,10 +50,10 @@
         top: -80px;
 
         img {
-        margin-top: 9px;
+            margin-top: 9px;
         }
 
-        p{
+        p {
             position: relative;
             font-family: "shrimp";
             font-size: 25px;
@@ -74,13 +75,42 @@
     &__button {
         border-radius: 80px;
         font-family: "shrimp";
-        font-size: 15px;
-        padding: 20px;
-        width: 260px;
+        font-size: 18px;
+        padding: 20px 40px;
         border: none;
         background-color: var(--color-yellow-light);
-        box-shadow: 1px 4px 1px #2c0805; //horizontal, vertical, dispersion #color//
+        box-shadow: 2px 4px 1px #2c0805; //horizontal, vertical, dispersion #color//
         color: var(--color-red-dark);
         margin-bottom: 50px;
+    }
+
+    hr {
+        border: none;
+        border-top: 1px solid #d1c1c1;
+        width: 50%;
+        margin: 20px auto;
+    }
+
+    
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 }

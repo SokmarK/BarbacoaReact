@@ -1,6 +1,9 @@
 .sect {
     background-color: var(--color-yellow-light);
     display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
 }
 
 .sect__ul {
@@ -12,4 +15,24 @@
     width: 100%;
     list-style: none;
     font-family: "shrimp";
+    font-size: 1.1rem;
+    color: var(--color-red-dark);
+}
+
+@media (max-width : 414px) and (max-width : 640px) {
+    .sect {
+        text-align: center;
+    }
+
+    .sect__ul {
+        display: block;
+        margin: auto;
+        padding: 0;
+        text-align: center;
+    }
+
+    .sect__ul li {
+        margin: 20px 0;
+        display: block;
+    }
 }
