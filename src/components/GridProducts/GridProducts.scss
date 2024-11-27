@@ -1,5 +1,4 @@
 .section-first {
-    margin-top: 150px;
 
     &__container {
         display: grid;
@@ -90,27 +89,94 @@
         width: 50%;
         margin: 20px auto;
     }
+}
 
-    
+.swiper {
+    width: 100%;
+    height: 100%;
+    display: none !important;
+}
 
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide {
+    .section-first__div {
+        margin-top: 80px;
+    }
+}
+
+.swiper-pagination {
+    margin-top: 20px ;
+    position: relative;
+}
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    background: var(--color-red-dark);
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--color-red);
+}
+
+@media (min-width: 667px) and (max-width: 970px) {
+    .section-first__red-div {
+        .section-first__popular-p {
+            font-size: 20px;
+        }
+
+        img {
+            margin-top: 15px;
+            width: 100px;
+        }
+    }
+}
+
+@media (min-width: 0px) and (max-width: 665px) {
     .swiper {
-        width: 100%;
-        height: 100%;
+        display: block !important;
     }
 
-    .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    .section-first__container {
+        display: none;
     }
 
-    .swiper-slide img {
-        display: block;
+    .section-first {
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .section-first__red-div {
+        img {
+            width: 120px;
+            margin: auto;
+            padding-top: 10px;
+        }
+    }
+
+    .section-first__p-price{
+        padding-bottom: 15px;
+    }
+
+}
+
+@media (min-width: 665px) {
+    .container-mobile-swiper {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        max-width: 1124px;
+        margin: 0 auto;
+    }
+    .section-first{
+        margin-top: 120px !important;
     }
 }

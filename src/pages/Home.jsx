@@ -3,7 +3,7 @@ import "./Home.scss";
 export default function Home() {
     return (
         <section className="section">
-            <div className="container">
+            <div className="container mobile-home-container">
                 <div className="section__max">
                     <div className="section__div">
                         <p className="section__pneu">TU BUSQUEDA ACABÓ</p>

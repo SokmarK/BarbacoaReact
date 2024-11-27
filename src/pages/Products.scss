@@ -19,7 +19,7 @@
     color: var(--color-red-dark);
 }
 
-@media (max-width : 414px) and (max-width : 640px) {
+@media (min-width : 0px) and (max-width : 665px) {
     .sect {
         text-align: center;
     }

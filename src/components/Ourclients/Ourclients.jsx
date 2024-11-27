@@ -8,7 +8,7 @@ export default function Ourclients() {
                 <h1>NUESTROS CLIENTES</h1>
             </div>
 
-            <div className="section-clients__div-cards container">
+            <div className="section-clients__div-cards ">
                 <div className="section-clients__card">
                     <img src="./marks.svg" alt="" />
                     <p>

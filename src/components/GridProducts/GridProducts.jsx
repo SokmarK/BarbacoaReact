@@ -1,57 +1,70 @@
-import "./GridProducts.scss";
-{
-    /*import React, { useRef, useState } from "react";
+import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
+import { Pagination } from "swiper/modules";
+import "./GridProducts.scss";
 
-import { Pagination } from "swiper/modules";*/
-}
+const products = [
+    {
+        img: "/barbacoaexample.png",
+        title: "80LB PREMIUM",
+        price: "$ 1.100.000",
+        list: ["16 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
+    },
+    {
+        img: "/barbacoaexample.png",
+        title: "60LB PREMIUM",
+        price: "$ 950.000",
+        list: ["10 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
+        popular: true,
+    },
+    {
+        img: "/barbacoaexample.png",
+        title: "50LB PREMIUM",
+        price: "$ 750.000",
+        list: ["10 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
+    },
+];
+
+const ProductCard = ({ img, title, price, list, popular }) => {
+    return (
+        <div className="section-first__div">
+            {popular ? (
+                <div className="section-first__red-div">
+                    <img src="/stars.svg" alt="" />
+                    <p className="section-first__popular-p">MÁS POPULAR</p>
+                </div>
+            ) : null}
+
+            <img src={img} alt="" />
+            <hr />
+            <p className="section-first__p-shrimp">{title}</p>
+            <ul>
+                {list.map((item) => (
+                    <li key={item}>{item}</li>
+                ))}
+            </ul>
+            <p className="section-first__p-price">{price}</p>
+        </div>
+    );
+};
+
+ProductCard.propTypes = {
+    img: PropTypes.string.isRequired,
+    title: PropTypes.string.isRequired,
+    price: PropTypes.string.isRequired,
+    list: PropTypes.array.isRequired,
+    popular: PropTypes.bool,
+};
 
 export default function GridProducts() {
     return (
-        <section className="section-first container">
+        <section className="section-first container-mobile-swiper">
             <div className="section-first__container">
-                <div className="section-first__div">
-                    <img src="/barbacoaexample.png" alt="" />
-                    <hr />
-                    <p className="section-first__p-shrimp">80LB PREMIUM</p>
-                    <ul>
-                        <li>16 Ganchos gruesos</li>
-                        <li>1 Carbonera</li>
-                        <li>1 Termometro</li>
-                    </ul>
-                    <p className="section-first__p-price">$ 1.100.000</p>
-                </div>
-
-                <div className="section-first__div">
-                    <div className="section-first__red-div">
-                        <img src="/stars.svg" alt="" />
-                        <p className="section-first__popular-p">MÁS POPULAR</p>
-                    </div>
-
-                    <img src="/barbacoaexample.png" alt="" />
-                    <hr />
-                    <p className="section-first__p-shrimp">80LB PREMIUM</p>
-                    <ul>
-                        <li>16 Ganchos gruesos</li>
-                        <li>1 Carbonera</li>
-                        <li>1 Termometro</li>
-                    </ul>
-                    <p className="section-first__p-price">$ 1.100.000</p>
-                </div>
-
-                <div className="section-first__div">
-                    <img src="/barbacoaexample.png" alt="" />
-                    <hr />
-                    <p className="section-first__p-shrimp">80LB PREMIUM</p>
-                    <ul>
-                        <li>16 Ganchos gruesos</li>
-                        <li>1 Carbonera</li>
-                        <li>1 Termometro</li>
-                    </ul>
-                    <p className="section-first__p-price">$ 1.100.000</p>
-                </div>
+                {products.map((product) => (
+                    <ProductCard key={product.title} {...product} />
+                ))}
             </div>
 
             <div className="section-first__div-button">
@@ -62,25 +75,22 @@ export default function GridProducts() {
 
             {/* ----------- CARRUSEL -----------  */}
 
-            {/*<Swiper
-                slidesPerView={3}
+            <Swiper
+                slidesPerView={2}
                 spaceBetween={30}
-                pagination={{
-                    clickable: true,
-                }}
+                pagination={{ clickable: true }}
                 modules={[Pagination]}
-                className="mySwiper"
-            ></Swiper>
-
-            <SwiperSlide>Slide 1</SwiperSlide>
-            <SwiperSlide>Slide 2</SwiperSlide>
-            <SwiperSlide>Slide 3</SwiperSlide>
-            <SwiperSlide>Slide 4</SwiperSlide>
-            <SwiperSlide>Slide 5</SwiperSlide>
-            <SwiperSlide>Slide 6</SwiperSlide>
-            <SwiperSlide>Slide 7</SwiperSlide>
-            <SwiperSlide>Slide 8</SwiperSlide>
-            <SwiperSlide>Slide 9</SwiperSlide> */}
+                initialSlide={1}
+                loop={true}
+                centeredSlides={true}
+                className="mySwiper "
+            >
+                {products.map((product) => (
+                    <SwiperSlide key={product.title}>
+                        <ProductCard {...product} />
+                    </SwiperSlide>
+                ))}
+            </Swiper>
         </section>
     );
 }
