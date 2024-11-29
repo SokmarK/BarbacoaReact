@@ -27,7 +27,7 @@
     font-style: normal;
 }
 
-/* ------------------------------------------HTML---------------------------------------- */
+/* ----------------------------------HTML---------------------------------------- */
 
 body {
     background-color: var(--color-gray-light);
@@ -62,16 +62,23 @@ ul {
     padding: 0;
 }
 
+
+/* -----------------------------CONTAINERS------------------------------------- */
+
 .container {
     width: 100%;
     max-width: 1124px;
     margin: 0 auto;
 }
 
-.page-container {
-    width: 100%;
-    max-width: 50%;
+.containersecond {
+    width: 60%;
     margin: 0 auto;
+}
+
+.page-container {
+    min-width: 20%;
+    max-width: 1700px;
 }
 
 
@@ -102,3 +109,4 @@ ul {
         max-width: 380px;
     }
 }
+

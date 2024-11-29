@@ -81,9 +81,9 @@ PageAcCard.propTypes = {
 
 export default function PageAccesories() {
     return (
-        <div>
+        <div className="containersecond">
             <h1 className="title-accesorios">Accesorios</h1>
-            <section className="section-page-accesories page-container">
+            <section className="section-page-accesories ">
                 {ObjectAccesories.map((acc) => (
                     <PageAcCard key={acc.title} {...acc} />
                 ))}

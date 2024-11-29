@@ -95,7 +95,7 @@ PageCard.propTypes = {
 export default function PageProducts() {
     return (
         <div>
-            <h1 className="title-barriles">BARRILES</h1>
+            <h1 className="title-barriles container">BARRILES</h1>
             <section className="section-page-products page-container">
                 {ObjectProducts.map((some) => (
                     <PageCard key={some.title} {...some} />

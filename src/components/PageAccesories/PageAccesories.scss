@@ -4,6 +4,7 @@
     gap: 0px 10px;
     justify-items: center;
 
+
     img {
         width: 149px;
         border-radius: 22px;
@@ -20,10 +21,11 @@
 
 .page-accesories-container {
     display: flex;
-    width: 100%;
+    width: 380px;
     background-color: #f5f3f4;
     border-radius: 22px;
     margin-top: 20px;
+
 
     &__p-shrimp {
         font-family: "shrimp";

@@ -16,6 +16,8 @@
             margin-left: 20px;
             font-family: "hanken";
             color: var(--color-yellow-light);
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
     }
 
@@ -27,4 +29,15 @@
 .navbar img {
     width: 97px;
     margin-left: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar img:hover {
+    transform: scale(0.9);
+}
+
+.navbar li:hover {
+    transform: scale(0.9);
+    color: #afa183;
 }

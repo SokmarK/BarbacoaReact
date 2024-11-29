@@ -6,7 +6,7 @@ export default function Navbar() {
         <header className="navbar">
             <div className="navbar__container container">
                 <Link to={"/"}>
-                    <img src="barbacoabarrilLOGO.png" alt="barbacoabarril" />
+                    <img src="barbacoabarrilLOGO.png" alt="barbacoabarril"/>
                 </Link>
 
                 <nav className="navbar__nav ">
