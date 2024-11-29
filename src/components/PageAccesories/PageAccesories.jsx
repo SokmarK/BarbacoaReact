@@ -46,7 +46,7 @@ const ObjectAccesories = [
     },
 ];
 
-const PageAcCard = ({ img, title, price }) => {
+const PageAccesoriesCard = ({ img, title, price }) => {
     return (
         <div className="page-accesories-container">
             {img ? (
@@ -69,23 +69,20 @@ const PageAcCard = ({ img, title, price }) => {
     );
 };
 
-PageAcCard.propTypes = {
-    img: PropTypes.string.isRequired,
+PageAccesoriesCard.propTypes = {
+    img: PropTypes.string,
     title: PropTypes.string.isRequired,
     price: PropTypes.string.isRequired,
 };
 
-{
-    /* Contenedor padre*/
-}
-
+/* Contenedor padre*/
 export default function PageAccesories() {
     return (
-        <div className="containersecond">
+        <div className="container">
             <h1 className="title-accesorios">Accesorios</h1>
-            <section className="section-page-accesories ">
-                {ObjectAccesories.map((acc) => (
-                    <PageAcCard key={acc.title} {...acc} />
+            <section className="section-page-accesories">
+                {ObjectAccesories.map((acc, index) => (
+                    <PageAccesoriesCard key={index} {...acc} />
                 ))}
             </section>
         </div>

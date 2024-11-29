@@ -96,7 +96,7 @@ export default function PageProducts() {
     return (
         <div>
             <h1 className="title-barriles container">BARRILES</h1>
-            <section className="section-page-products page-container">
+            <section className="section-page-products container">
                 {ObjectProducts.map((some) => (
                     <PageCard key={some.title} {...some} />
                 ))}

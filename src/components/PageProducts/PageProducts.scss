@@ -1,6 +1,5 @@
 .section-page-products {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 0px 20px;
     justify-self: center;
 
@@ -20,7 +19,8 @@
 
 .page-products-container {
     display: flex;
-    width: 552px;
+    // width: 552px;
+    width: 100%;
     background-color: #f5f3f4;
     border-radius: 56px;
     margin-top: 20px;
@@ -40,7 +40,7 @@
     }
 
     &__div-title {
-        width: 300px;
+        // width: 300px;
         padding: 41px 0px 0px 38px;
     }
 
