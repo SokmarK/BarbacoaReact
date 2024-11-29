@@ -27,6 +27,8 @@
     font-style: normal;
 }
 
+/* ------------------------------------------HTML---------------------------------------- */
+
 body {
     background-color: var(--color-gray-light);
     font-family: "hanken", sans-serif;
@@ -41,12 +43,6 @@ html {
     margin: 0;
 }
 
-.container {
-    width: 100%;
-    max-width: 1124px;
-    margin: 0 auto;
-}
-
 button {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -56,6 +52,30 @@ button:hover {
     background-color: var(--color-yellow-dark);
     transform: scale(0.9);
 }
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1124px;
+    margin: 0 auto;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+
+/* ---------------------------MEDIA QUERYS----------------------------------- */
 
 @media (min-width: 0px) and (max-width: 665px) {
     .container {

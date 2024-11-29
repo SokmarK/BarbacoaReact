@@ -1,16 +1,27 @@
+import { Link } from "react-router-dom";
 import "./Navbar.scss";
 
 export default function Navbar() {
     return (
         <header className="navbar">
             <div className="navbar__container container">
-                <img src="barbacoabarrilLOGO.png" alt="barbacoabarril" />
+                <Link to={"/"}>
+                    <img src="barbacoabarrilLOGO.png" alt="barbacoabarril" />
+                </Link>
 
                 <nav className="navbar__nav ">
                     <ul className="navbar__menu">
-                        <li>Barriles</li>
-                        <li>Accesorios</li>
-                        <li className="navbar__mr">Recetas</li>
+                        <Link to={"/products"}>
+                            <li>Barriles</li>
+                        </Link>
+
+                        <Link to={"/accesories"}>
+                            <li>Accesorios</li>
+                        </Link>
+
+                        <Link>
+                            <li className="navbar__mr">Recetas</li>
+                        </Link>
                     </ul>
                 </nav>
             </div>

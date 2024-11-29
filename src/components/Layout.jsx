@@ -1,16 +1,16 @@
-import Navbar from "./Navbar/Navbar";
 import { Outlet } from "react-router-dom";
 import Footer from "./Footer/Footer";
 import Products from "../pages/Products";
 import Ourclients from "./Ourclients/Ourclients";
 import GridProducts from "./GridProducts/GridProducts";
+import Home from "../pages/Home";
 
 export default function Layout() {
     return (
         <>
-            <Navbar />
-            <Outlet />
+            <Home />
             <Products />
+            <Outlet />
             <GridProducts />
             <Ourclients />
             <Footer />

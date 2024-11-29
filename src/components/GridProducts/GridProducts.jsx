@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
@@ -67,12 +68,6 @@ export default function GridProducts() {
                 ))}
             </div>
 
-            <div className="section-first__div-button">
-                <button className="section-first__button">
-                    TODOS LOS PRODUCTOS
-                </button>
-            </div>
-
             {/* ----------- CARRUSEL -----------  */}
 
             <Swiper
@@ -91,6 +86,14 @@ export default function GridProducts() {
                     </SwiperSlide>
                 ))}
             </Swiper>
+
+            <div className="section-first__div-button">
+                <Link to="/products">
+                    <button className="section-first__button">
+                        TODOS LOS PRODUCTOS
+                    </button>
+                </Link>
+            </div>
         </section>
     );
 }

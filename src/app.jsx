@@ -1,15 +1,24 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
+import Navbar from "./components/Navbar/Navbar";
 import Layout from "./components/Layout";
+import PageProducts from "./components/PageProducts/PageProducts";
+import PageAccesories from "./components/PageAccesories/PageAccesories";
 import NotFound from "./pages/NotFound";
 
 export default function App() {
     return (
-        <Routes>
-            <Route path="/" element={<Layout />}>
-                <Route index element={<Home />} />
+        <>
+            <Navbar />
+
+            <Routes>
+                <Route path="/" element={<Layout />} />
+
+                <Route path="/products" element={<PageProducts />} />
+                
+                <Route path="/accesories" element={<PageAccesories />} />
+
                 <Route path="*" element={<NotFound />} />
-            </Route>
-        </Routes>
+            </Routes>
+        </>
     );
 }
