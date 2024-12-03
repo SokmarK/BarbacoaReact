@@ -14,13 +14,49 @@
     &__div-img {
         display: flex;
     }
+
+    @media (max-width: 1124px) {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media (max-width: 600px) {
+        img {
+            width: 180px;
+        }
+
+        hr {
+            display: none;
+        }
+
+        ul {
+            font-size: 0.9rem;
+            padding: 0px 14px 0px 0px;
+            text-align: center;
+        }
+
+        .page-products-container__div-title {
+            padding: 0;
+        }
+
+        .page-products-container__p-shrimp {
+            font-size: 1.5rem;
+            text-align: center;
+            padding: 3px 14px 0px 0px;
+        }
+
+        .page-products-container__p-price{
+            font-size: 1.2rem;
+            padding: 0px 0px 0px 14px;
+            margin: 0;
+        }
+    }
 }
 
 //contenedor hijo
 
 .page-products-container {
     display: flex;
-    width: 552px;
+    width: 100%;
     background-color: #f5f3f4;
     border-radius: 56px;
     margin-top: 20px;
@@ -40,7 +76,6 @@
     }
 
     &__div-title {
-        width: 300px;
         padding: 41px 0px 0px 38px;
     }
 

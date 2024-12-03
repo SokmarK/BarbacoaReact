@@ -3,30 +3,29 @@
     display: flex;
     justify-content: space-between;
     padding: 20px 0px;
+    margin-top: 5.5%;
 
-    &__sect {
-        margin-left: 20px;
-    }
+
 
     &__p,
     &__p1 {
         color: beige;
         margin: 0;
-        font-weight: 500;
+        font-size: 500;
     }
 
     &__p {
-        padding: 20px 20px 0px 35px;
+        padding: 20px 20px 0px 0px;
         margin-bottom: 5px;
     }
 
     &__p1 {
-        padding: 0px 20px 0px 35px;
+        padding: 0px 20px 0px 0px;
     }
 
     &__social {
-        padding: 20px 20px 0px 0px;
-        margin-right: 20px;
+        padding: 20px 00px 0px 0px;
+
     }
 
     &__tiktok {
@@ -40,5 +39,25 @@ img{
 
 img:hover{
     transform: scale(0.9);
+}
+
+.footer-margin{
+    display: flex;
+    justify-content: space-between;
+}
+}
+
+
+@media (max-width: 410px) {
+.footer__tiktok{
+    margin-right: 20px;
+}
+
+.footer__sect {
+    font-size: 0.9rem;
+}
+
+img{
+    width: 40px;
 }
 }

@@ -4,6 +4,7 @@
     --color-gray-light: #d5d1cc;
     --color-yellow-light: #f5e1b5;
     --color-yellow-dark: #d5c39e;
+
 }
 
 @font-face {
@@ -28,6 +29,10 @@
 }
 
 /* ----------------------------------HTML---------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     background-color: var(--color-gray-light);
@@ -62,51 +67,30 @@ ul {
     padding: 0;
 }
 
-
 /* -----------------------------CONTAINERS------------------------------------- */
 
 .container {
-    width: 100%;
-    max-width: 1124px;
-    margin: 0 auto;
-}
+    width: calc(100% - 80px);
+    margin: 0 40px;
 
-.containersecond {
-    width: 60%;
-    margin: 0 auto;
-}
-
-.page-container {
-    min-width: 20%;
-    max-width: 1700px;
-}
-
-
-/* ---------------------------MEDIA QUERYS----------------------------------- */
-
-@media (min-width: 0px) and (max-width: 665px) {
-    .container {
-        max-width: 380px;
-    }
-}
-
-@media (min-width: 666px) {
-    .container {
-        max-width: 70%;
-    }
-}
-
-@media (min-width: 667px) {
-    .container {
+    @media (min-width: 1124px) {
         width: 100%;
         max-width: 1124px;
         margin: 0 auto;
     }
 }
 
-@media (min-width: 0px) and (max-width: 1120px) {
+
+.page-container {
+    min-width: 20%;
+    max-width: 1700px;
+}
+
+/* ---------------------------MEDIA QUERYS----------------------------------- */
+
+
+@media (min-width: 0px) and (max-width: 1124px) {
     .swiper-container {
         max-width: 380px;
     }
 }
-

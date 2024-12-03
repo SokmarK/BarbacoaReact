@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import Footer from "./Footer/Footer";
 import Products from "../pages/Products";
 import Ourclients from "./Ourclients/Ourclients";
 import GridProducts from "./GridProducts/GridProducts";
@@ -13,7 +12,6 @@ export default function Layout() {
             <Outlet />
             <GridProducts />
             <Ourclients />
-            <Footer />
         </>
     );
 }

@@ -1,8 +1,16 @@
 .section-page-accesories {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0px 10px;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 29px 20px;
     justify-items: center;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1124px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 
 
     img {
@@ -21,10 +29,10 @@
 
 .page-accesories-container {
     display: flex;
-    width: 380px;
+    width: 100%;
     background-color: #f5f3f4;
     border-radius: 22px;
-    margin-top: 20px;
+
 
 
     &__p-shrimp {
@@ -42,7 +50,7 @@
     }
 
     &__div-title {
-        width: 300px;
+
         padding: 15px 0px 0px 10px;
     }
 
@@ -58,7 +66,7 @@
     font-size: 2.3rem;
     font-family: "shrimp";
     margin-top: 94px;
-    margin-left: 16.1%;
+
 }
 
 .extra-p-margin {
