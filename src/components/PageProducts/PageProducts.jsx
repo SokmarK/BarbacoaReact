@@ -1,62 +1,40 @@
 import PropTypes from "prop-types";
 import "./PageProducts.scss";
 
-
-
 const ObjectProducts = [
     {
-        img: "/barbacoaexample.png",
-        title: "80LB PREMIUM",
-        price: "$ 1.100.000",
-        list: ["16 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
-    },
-    {
-        img: "/barbacoaexample.png",
-        title: "60LB PREMIUM",
-        price: "$ 950.000",
-        list: ["10 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
-    },
-    {
-        img: "/barbacoaexample.png",
-        title: "50LB PREMIUM",
-        price: "$ 750.000",
-        list: ["10 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
-    },
-    {
-        img: "/barbacoaexample.png",
+        img: "/barril10lbnew.jpg",
         title: "10LB PREMIUM",
-        price: "$ 1.100.000",
-        list: ["16 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
+        price: "$ 380.000",
+        list: [""],
     },
     {
-        img: "/barbacoaexample.png",
-        title: "20LB PREMIUM",
-        price: "$ 950.000",
-        list: ["10 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
+        img: "/barril17lbeco.jpg",
+        title: "17LB ECO",
+        price: "$ 500.000",
+        list: ["Lanza", "Garfio", "13 Ganchos", "2 Accesorios de chorizo"],
     },
     {
-        img: "/barbacoaexample.png",
-        title: "30LB PREMIUM",
+        img: "/barril30lbeco.jpg",
+        title: "30LB ECO",
         price: "$ 750.000",
-        list: ["10 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
+        list: ["Lanza", "Garfio", "16 Ganchos", "2 Accesorios de chorizo"],
     },
     {
-        img: "/barbacoaexample.png",
-        title: "40LB PREMIUM",
-        price: "$ 1.100.000",
-        list: ["16 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
+        img: "/barril50lbeco.jpg",
+        title: "50LB ECO",
+        price: "$ 900.000",
+        list: ["Lanza", "Garfio", "16 Ganchos", "2 Accesorios de chorizo"],
     },
     {
-        img: "/barbacoaexample.png",
-        title: "90LB PREMIUM",
-        price: "$ 950.000",
-        list: ["10 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
-    },
-    {
-        img: "/barbacoaexample.png",
-        title: "1LB PREMIUM",
-        price: "$ 750.000",
-        list: ["10 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
+        img: "/barril80lbeco.jpg",
+        title: "80LB ECO",
+        price: "$ 1.200.000",
+        list: [
+            "Lanza",
+            "2 Garfios",
+            "20 Ganchos gruesos", "2 Accesorios de chorizo",
+        ],
     },
 ];
 
