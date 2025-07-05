@@ -1,10 +1,38 @@
 import PropTypes from "prop-types";
 import "./PageProducts.scss";
 
-const ObjectProducts = [
+const ObjectProductsPremium = [
+    {
+        img: "/barrilpremium17lb.png",
+        title: "17LB PREMIUM",
+        price: "$ 700.000",
+        list: ["13 Ganchos delgados", "1 Carbonera", "1 Termometro"],
+    },
+    {
+        img: "/barrilpremium30lb.png",
+        title: "30LB PREMIUM",
+        price: "$ 900.000",
+        list: ["16 Ganchos delgados", "1 Carbonera", "1 Termometro"],
+    },
+    {
+        img: "/barrilpremium50lb.png",
+        title: "50LB PREMIUM",
+        price: "$ 1.100.000",
+        list: ["16 Ganchos gruesos", "1 Carbonera", "1 Termometro"],
+    },
+
+    {
+        img: "/barrilpremium80lb.png",
+        title: "80LB PREMIUM",
+        price: "$ 1.400.000",
+        list: ["20 Ganchos gruesos", "2 Garfio", "1 Carbonera", "1 Termometro"]
+    },
+];
+
+const ObjectProductsEco = [
     {
         img: "/barril10lbnew.jpg",
-        title: "10LB PREMIUM",
+        title: "10LB",
         price: "$ 380.000",
         list: [""],
     },
@@ -33,7 +61,8 @@ const ObjectProducts = [
         list: [
             "Lanza",
             "2 Garfios",
-            "20 Ganchos gruesos", "2 Accesorios de chorizo",
+            "20 Ganchos gruesos",
+            "2 Accesorios de chorizo",
         ],
     },
 ];
@@ -72,13 +101,24 @@ PageCard.propTypes = {
 
 export default function PageProducts() {
     return (
-        <div>
-            <h1 className="title-barriles container">BARRILES</h1>
-            <section className="section-page-products container">
-                {ObjectProducts.map((some) => (
-                    <PageCard key={some.title} {...some} />
-                ))}
-            </section>
-        </div>
+        <section>
+            <div>
+                <h1 className="title-barriles container">BARRILES PREMIUM</h1>
+                <section className="section-page-products container">
+                    {ObjectProductsPremium.map((some) => (
+                        <PageCard key={some.title} {...some} />
+                    ))}
+                </section>
+            </div>
+
+            <div>
+                <h1 className="title-barriles container">BARRILES ECO</h1>
+                <section className="section-page-products container">
+                    {ObjectProductsEco.map((some) => (
+                        <PageCard key={some.title} {...some} />
+                    ))}
+                </section>
+            </div>
+        </section>
     );
 }

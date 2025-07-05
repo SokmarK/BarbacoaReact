@@ -6,9 +6,10 @@
 
     img {
         width: 273px;
-        border-radius: 56px;
+        height: 273px;
         object-fit: cover;
-        display: flex;
+        display: block;
+        border-radius: 56px;
     }
 
     &__div-img {
@@ -44,7 +45,7 @@
             padding: 3px 14px 0px 0px;
         }
 
-        .page-products-container__p-price{
+        .page-products-container__p-price {
             font-size: 1.2rem;
             padding: 0px 0px 0px 14px;
             margin: 0;
