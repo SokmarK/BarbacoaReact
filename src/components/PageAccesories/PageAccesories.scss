@@ -1,7 +1,7 @@
 .section-page-accesories {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    gap: 29px 20px;
+    gap: 70px 1px;
     justify-items: center;
 
     @media (min-width: 768px) {
@@ -12,9 +12,8 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
-
     img {
-        width: 149px;
+        width: 250px;
         border-radius: 22px;
         object-fit: cover;
         display: flex;
@@ -29,46 +28,14 @@
 
 .page-accesories-container {
     display: flex;
-    width: 100%;
     background-color: #f5f3f4;
     border-radius: 22px;
-
-
-
-    &__p-shrimp {
-        font-family: "shrimp";
-        color: var(--color-red);
-        text-shadow: 3px 1px 0px rgba(0, 0, 0, 0.7);
-        font-size: 1.6rem;
-        margin: 0;
-    }
-
-    &__p-price {
-        font-weight: bold;
-        font-size: 1.6rem;
-        margin: 30px 0px 0px 0px;
-    }
-
-    &__div-title {
-
-        padding: 15px 0px 0px 10px;
-    }
-
-    hr {
-        border: none;
-        border-top: 1px solid #d1c1c1;
-        width: 70%;
-        margin: 15px 0px;
-    }
 }
 
 .title-accesorios {
     font-size: 2.3rem;
     font-family: "shrimp";
     margin-top: 94px;
-
 }
 
-.extra-p-margin {
-    margin-left: 32px;
-}
+

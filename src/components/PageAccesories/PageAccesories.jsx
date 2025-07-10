@@ -2,82 +2,43 @@ import PropTypes from "prop-types";
 import "./PageAccesories.scss";
 
 const ObjectAccesories = [
-    {
-        img: "/barbacoaexample.png",
-        title: "80LB PREMIUM",
-        price: "$ 1.100.000",
-    },
-    {
-        title: "60LB PREMIUM",
-        price: "$ 950.000",
-    },
-    {
-        img: "/barbacoaexample.png",
-        title: "50LB PREMIUM",
-        price: "$ 750.000",
-    },
-    {
-        img: "/barbacoaexample.png",
-        title: "80LB PREMIUM",
-        price: "$ 1.100.000",
-    },
-    {
-        title: "60LB PREMIUM",
-        price: "$ 950.000",
-    },
-    {
-        img: "/barbacoaexample.png",
-        title: "50LB PREMIUM",
-        price: "$ 750.000",
-    },
-    {
-        img: "/barbacoaexample.png",
-        title: "80LB PREMIUM",
-        price: "$ 1.100.000",
-    },
-    {
-        title: "60LB PREMIUM",
-        price: "$ 950.000",
-    },
-    {
-        img: "/barbacoaexample.png",
-        title: "50LB PREMIUM",
-        price: "$ 750.000",
-    },
+    { img: "/accesorio1.png" },
+    { img: "/accesorio2.png" },
+    { img: "/accesorio3.png" },
+    { img: "/accesorio4.png" },
+    { img: "/accesorio5.png" },
+    { img: "/accesorio6.png" },
+    { img: "/accesorio7.png" },
+    { img: "/accesorio8.png" },
+    { img: "/accesorio9.png" },
+    { img: "/accesorio10.png" },
+    { img: "/accesorio11.png" },
+    { img: "/accesorio12.png" },
+    { img: "/accesorio13.png" },
+    { img: "/accesorio14.png" },
+    { img: "/accesorio15.png" },
+    { img: "/accesorio16.png" },
+    { img: "/accesorio17.png" },
+    { img: "/accesorio18.png" },
 ];
 
-const PageAccesoriesCard = ({ img, title, price }) => {
+const PageAccesoriesCard = ({ img }) => {
     return (
         <div className="page-accesories-container">
             {img ? (
-                <div className="page-accesories-container__div-img">
+                <div className="">
                     <img src={img} alt="" />
                 </div>
             ) : null}
-
-            <div
-                className={`page-accesories-container__div-title ${
-                    !img ? "extra-p-margin" : ""
-                } `}
-            >
-                <p className="page-accesories-container__p-shrimp">{title}</p>
-                <hr />
-
-                <p className="page-accesories-container__p-price">{price}</p>
-            </div>
         </div>
     );
 };
 
 PageAccesoriesCard.propTypes = {
     img: PropTypes.string.isRequired,
-    title: PropTypes.string.isRequired,
-    price: PropTypes.string.isRequired,
 };
 
-
-    /* Contenedor padre*/
-
+/* Contenedor padre*/
 
 export default function PageAccesories() {
     return (
