@@ -19,8 +19,8 @@ export default function Navbar() {
                             <li>Accesorios</li>
                         </Link>
 
-                        <Link>
-                            <li className="navbar__mr">Recetas</li>
+                        <Link to={"/we"}>
+                            <li className="navbar__mr">Nosotros</li>
                         </Link>
                     </ul>
                 </nav>

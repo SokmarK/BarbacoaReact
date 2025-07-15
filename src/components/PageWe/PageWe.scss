@@ -1,0 +1,43 @@
+.section-page-we {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 70px 1px;
+    justify-items: center;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (min-width: 1124px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    img {
+        width: 250px;
+        border-radius: 22px;
+        object-fit: cover;
+        display: flex;
+    }
+
+    &__div-img {
+        display: flex;
+
+    }
+}
+
+//contenedor hijo
+
+.page-we-container {
+    display: flex;
+    border-radius: 22px;
+    box-shadow: 10px 15px 15px #2e2e2e; //horizontal, vertical, dispersion #color//
+
+}
+
+.title-nosotros {
+    font-size: 2.3rem;
+    font-family: "shrimp";
+    margin-top: 94px;
+}
+
+
